@@ -1,8 +1,13 @@
-import React from 'react';
-import '../global.css';
+import React  from "react";
 
-const Button = () => {
-  return <button className='bg-slate-200'>Test</button>;
-};
+interface ButtonProps {
+    children: React.ReactNode;
+}
 
-export default Button;
+export default function Button(props: ButtonProps) {
+    return(
+        <button className="bg-red-700">
+            {props.children}
+        </button>
+    )
+}

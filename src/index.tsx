@@ -1,6 +1,5 @@
-import * as React from 'react';
+import './tailwind.css';
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
-};
+import Button from "./button";
+
+export default Button;
